@@ -1,0 +1,28 @@
+[
+  {
+    "id": 1,
+    "icon": "https://i.ibb.co/ymMXs91X/success-doctor.png",
+    "number": 120,
+    "title": "Lawyers Available"
+  },
+  {
+    "id": 2,
+    "icon": "https://i.ibb.co/9kVdV73f/success-patients.png",
+    "number": 3500,
+    "title": "Cases Resolved"
+  },
+  {
+    "id": 3,
+    "icon": "https://i.ibb.co/vxcVjn6Z/success-review.png",
+    "number": 3000,
+    "title": "Happy Clients"
+  },
+  {
+    "id": 4,
+    "icon": "https://i.ibb.co/tMTpTyLS/success-staffs.png",
+    "number": 25,
+    "title": "Years in Service"
+  }
+]
+
+
