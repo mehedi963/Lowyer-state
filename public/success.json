@@ -1,27 +1,29 @@
+
+
 [
   {
     "id": 1,
     "icon": "https://i.ibb.co/ymMXs91X/success-doctor.png",
-    "number": 120,
-    "title": "Lawyers Available"
+    "number": 199,
+    "title": "Total Lawyer"
   },
   {
     "id": 2,
     "icon": "https://i.ibb.co/9kVdV73f/success-patients.png",
-    "number": 3500,
-    "title": "Cases Resolved"
+    "number": 467,
+    "title": "Total Reviews"
   },
   {
     "id": 3,
     "icon": "https://i.ibb.co/vxcVjn6Z/success-review.png",
-    "number": 3000,
-    "title": "Happy Clients"
+    "number": 1900,
+    "title": "Cases Initiated"
   },
   {
     "id": 4,
     "icon": "https://i.ibb.co/tMTpTyLS/success-staffs.png",
-    "number": 25,
-    "title": "Years in Service"
+    "number": 300,
+    "title": "Total Stuffs"
   }
 ]
 

@@ -1,11 +1,12 @@
 import React from 'react';
 import logo from '../../assets/logo.png'
+import { Link } from 'react-router';
 const Navbar = () => {
     const links = <>
-        <li><a>Home</a></li>
-        <li><a>My-Booking</a></li>
-        <li><a>Blogs</a></li>
-        <li><a>Contact Us</a></li>
+        <Link to='/'><li><a>Home</a></li></Link>
+        <Link to='/booking'><li><a>My-Booking</a></li></Link>
+        <Link to='/blogs'><li><a>Blogs</a></li></Link>
+        <Link to='/'><li><a>Contact Us</a></li></Link>
     </>
     return (
           <div className="navbar bg-base-100 shadow-sm">
@@ -31,7 +32,7 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn">Button</a>
+    <a className="btn bg-[#0EA106] text-white rounded-3xl">Contact Now</a>
   </div>
 </div>
     );
