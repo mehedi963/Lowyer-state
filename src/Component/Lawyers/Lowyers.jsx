@@ -13,7 +13,7 @@ const Lowyers = ({lawyersData}) => {
             </div>
            
 
-            <div>
+            { <div>
                 <Suspense fallback={<span>Loading.....</span>}>
                 <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-12'>
                     {
@@ -21,7 +21,7 @@ const Lowyers = ({lawyersData}) => {
                 }
                 </div>
                 </Suspense>
-            </div>
+            </div> }
             {/* {
                 lawyersData.map((item, index)=> !show && index>= 5 ?  <div>
                 <Suspense fallback={<span>Loading.....</span>}>

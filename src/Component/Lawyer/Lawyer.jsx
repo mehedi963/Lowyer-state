@@ -7,7 +7,7 @@ const Lawyer = ({ lawyerData }) => {
     const {id,image,experience, name, speciality, licenseNumber } = lawyerData;
     return (
         <div className="bg-white border-[#0F0F0F] rounded-xl shadow-md p-4 flex flex-col sm:flex-row items-center gap-4 w-full max-w-md mx-auto">
-            <div className="w-24 h-24 bg-gray-300 rounded-full">
+            <div className="w-24  h-24   bg-gray-300 rounded-full">
                 <img src={image} alt="" />
             </div>
 
