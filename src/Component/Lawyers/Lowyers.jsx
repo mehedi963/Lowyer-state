@@ -23,17 +23,6 @@ const Lowyers = ({lawyersData}) => {
                 </div>
                 </Suspense>
             </div> }
-            {/* {
-                lawyersData.map((item, index)=> !show && index>= 5 ?  <div>
-                <Suspense fallback={<span>Loading.....</span>}>
-                <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-12'>
-                    {
-                    lawyersData.map(lawyerData =><Lawyer key={lawyerData.id} lawyerData={lawyerData}></Lawyer>)
-                }
-                </div>
-                </Suspense>
-            </div> : <div></div>)
-            } */}
 
             {
                 !show && (
@@ -41,9 +30,7 @@ const Lowyers = ({lawyersData}) => {
                 )
             }
 
-            {/* <button onClick={()=>setShow(!show)} className=" mt-8 btn bg-[#0EA106] text-white rounded-3xl">{
-        show ? 'Show Less' : 'Show All Lawyer'
-        }</button> */}
+            
 
         </div>
     );
