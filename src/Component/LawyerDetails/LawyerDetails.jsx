@@ -1,9 +1,8 @@
 import React from 'react';
 import { Link, useLoaderData, useParams } from 'react-router';
 import { addToStoreDB } from '../../Pages/utilities/addToDB';
-  import { ToastContainer, toast } from 'react-toastify';
 const LawyerDetails = () => {
-    const notify = () => toast("Wow so easy!");
+    
 
     const { id } = useParams();
     const detailsId = parseInt(id);
@@ -71,7 +70,7 @@ const LawyerDetails = () => {
                             </div>
                             <div className='flex flex-col'>
                                 <p className='text-green-800 text-xs font-medium bg-amber-300 shadow-lg rounded-3xl my-4'>Due to high patient volume, we are currently accepting appointments for today only. We appreciate your understanding and cooperation.</p>
-                                <Link to='/booking'><button onClick={()=>handleBook(id,notify)} className='btn bg-green-300 text-black rounded-2xl '>Book Appointment Now</button></Link>
+                                <Link to='/booking'><button onClick={()=>handleBook(id)} className='btn bg-green-300 text-black rounded-2xl '>Book Appointment Now</button></Link>
                             </div>
                         </div>
         </div>

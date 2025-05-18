@@ -7,7 +7,7 @@ import Rechart from '../Rechart/Rechart';
 const MyBooking = () => {
     const data = useLoaderData();
     const [myBookList, setMyBooked] = useState();
-
+    
     useEffect(() =>{
         const storeBookedData = getStored();
         console.log(storeBookedData);

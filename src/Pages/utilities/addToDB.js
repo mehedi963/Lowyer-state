@@ -1,3 +1,5 @@
+
+
 const getStored = () =>{
  const storeLawyersData = localStorage.getItem("myBookList");
   if(storeLawyersData){
@@ -15,7 +17,7 @@ const getStored = () =>{
 const addToStoreDB =(id) =>{
     const storeDataDB = getStored();
     if(storeDataDB.includes(id)){
-        alert("ai id ase")
+        alert("Appointment already taken")
     }
     else{
         storeDataDB.push(id);
