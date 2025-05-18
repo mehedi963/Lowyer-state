@@ -3,6 +3,7 @@ import { Link, useLoaderData } from 'react-router';
 import { getStored } from '../../Pages/utilities/addToDB';
 import Booking from '../Booking/Booking';
 import Rechart from '../Rechart/Rechart';
+import { BarChart } from 'recharts';
 
 const MyBooking = () => {
     const data = useLoaderData();
@@ -22,6 +23,13 @@ const MyBooking = () => {
             {/* {
                 myBookList?.map(list =><Rechart key={list.id} list={list}></Rechart>)
             } */}
+            <BarChart width={600} height={300} data={myBookList}>
+                            <XAxis dataKey={'name'} stroke="#8884d8"></XAxis>
+                            <YAxis ></YAxis>
+                            <Tooltip ></Tooltip>
+                            <CartesianGrid stroke="#ccc" strokeDasharray="5 5"></CartesianGrid>
+                            <Bar dataKey={'fee'} fill="#8884d8" barSize={30} ></Bar>
+                        </BarChart>
             {/* <Rechart data={data}></Rechart> */}
             <div className='text-center'>
                 <h1 className='text-2xl font-bold mt-6 mb-2'>My Today Appointments</h1>
