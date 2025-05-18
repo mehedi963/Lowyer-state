@@ -19,9 +19,9 @@ const MyBooking = () => {
     console.log( myBookList);
     return (
         <div>
-            {
+            {/* {
                 myBookList?.map(list =><Rechart key={list.id} list={list}></Rechart>)
-            }
+            } */}
             {/* <Rechart data={data}></Rechart> */}
             <div className='text-center'>
                 <h1 className='text-2xl font-bold mt-6 mb-2'>My Today Appointments</h1>
@@ -31,8 +31,6 @@ const MyBooking = () => {
             {
                 myBookList?.map(book =><Booking key={book.id} book={book}></Booking>)
             }
-
-            <Link to='/'><button className='btn btn-block btn-secondary'>Go Back</button></Link>
 
         </div>
         

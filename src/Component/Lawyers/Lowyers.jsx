@@ -4,7 +4,9 @@ import Lawyer from '../Lawyer/Lawyer';
 
 
 const Lowyers = ({lawyersData}) => {
-   const [show, setShow] = useState();
+   const [show, setShow] = useState(false);
+   const lawyerssData = lawyersData;
+   console.log(lawyerssData);
     return (
         <div className='my-28 flex flex-col items-center'>
             <div className='text-center mb-8 '>

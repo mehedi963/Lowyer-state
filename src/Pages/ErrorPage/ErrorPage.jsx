@@ -3,7 +3,7 @@ import image404 from '../../assets/image404.jpg'
 import { Link } from 'react-router';
 const ErrorPage = () => {
     return (
-        <div className='flex flex-col justify-center items-center'>
+        <div className='flex flex-col justify-center items-center mt-10'>
             <img className='w-3/5 mx-auto' src={image404} alt="" />
             <h1 className='text-3xl font-bold text-fuchsia-500 my-2'>404 - Page Not Found</h1>
             <span className='mb-2'>Ooops! The page you're looking for doesn't exist</span>

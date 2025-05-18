@@ -6,7 +6,7 @@ const Blogs = () => {
             <h1 className='text-3xl font-extrabold my-7 text-center'>All Blogs</h1>
 <div
   tabIndex={0}
-  className="bg-primary text-primary-content focus:bg-secondary focus:text-secondary-content collapse"
+  className="my-4 bg-primary text-primary-content focus:bg-secondary focus:text-secondary-content collapse"
 >
   <div className="collapse-title font-semibold">1.What is useState and how does it work in React?</div>
   <div className="collapse-content text-sm">
@@ -24,7 +24,7 @@ const Blogs = () => {
 </div>
 <div
   tabIndex={0}
-  className="bg-primary text-primary-content focus:bg-secondary focus:text-secondary-content collapse"
+  className="my-4 bg-primary text-primary-content focus:bg-secondary focus:text-secondary-content collapse"
 >
   <div className="collapse-title font-semibold">3.What is a custom hook in React and when should you use one?</div>
   <div className="collapse-content text-sm">
@@ -33,7 +33,7 @@ const Blogs = () => {
 </div>
 <div
   tabIndex={0}
-  className="bg-primary text-primary-content focus:bg-secondary focus:text-secondary-content collapse"
+  className="my-4 bg-primary text-primary-content focus:bg-secondary focus:text-secondary-content collapse"
 >
   <div className="collapse-title font-semibold">4.Difference between controlled and uncontrolled components. Which one is better?</div>
   <div className="collapse-content text-sm">
@@ -42,7 +42,7 @@ const Blogs = () => {
 </div>
 <div
   tabIndex={0}
-  className="bg-primary text-primary-content focus:bg-secondary focus:text-secondary-content collapse"
+  className="mb-20 bg-primary text-primary-content focus:bg-secondary focus:text-secondary-content collapse"
 >
   <div className="collapse-title font-semibold">5.Tell us something about useFormStatus() in React.</div>
   <div className="collapse-content text-sm">
