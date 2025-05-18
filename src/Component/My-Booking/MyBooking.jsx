@@ -2,8 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link, useLoaderData } from 'react-router';
 import { getStored } from '../../Pages/utilities/addToDB';
 import Booking from '../Booking/Booking';
-import Rechart from '../Rechart/Rechart';
-import { BarChart } from 'recharts';
+import { Bar, BarChart, CartesianGrid, Tooltip, XAxis, YAxis } from 'recharts';
 
 const MyBooking = () => {
     const data = useLoaderData();
@@ -20,9 +19,7 @@ const MyBooking = () => {
     console.log( myBookList);
     return (
         <div>
-            {/* {
-                myBookList?.map(list =><Rechart key={list.id} list={list}></Rechart>)
-            } */}
+            
             <BarChart width={600} height={300} data={myBookList}>
                             <XAxis dataKey={'name'} stroke="#8884d8"></XAxis>
                             <YAxis ></YAxis>
@@ -30,7 +27,7 @@ const MyBooking = () => {
                             <CartesianGrid stroke="#ccc" strokeDasharray="5 5"></CartesianGrid>
                             <Bar dataKey={'fee'} fill="#8884d8" barSize={30} ></Bar>
                         </BarChart>
-            {/* <Rechart data={data}></Rechart> */}
+            
             <div className='text-center'>
                 <h1 className='text-2xl font-bold mt-6 mb-2'>My Today Appointments</h1>
             <p className='text-sm mb-7'>Our platform connects you with verified, experienced Lawyers across various specialties — all at your convenience.</p>
