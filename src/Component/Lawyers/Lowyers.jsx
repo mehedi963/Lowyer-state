@@ -5,8 +5,7 @@ import Lawyer from '../Lawyer/Lawyer';
 
 const Lowyers = ({lawyersData}) => {
    const [show, setShow] = useState(false);
-   const lawyerssData = lawyersData;
-   console.log(lawyerssData);
+   const dataToShow = show ? lawyersData : lawyersData.slice(0,6);
     return (
         <div className='my-28 flex flex-col items-center'>
             <div className='text-center mb-8 '>
@@ -19,7 +18,7 @@ const Lowyers = ({lawyersData}) => {
                 <Suspense fallback={<span>Loading.....</span>}>
                 <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-12'>
                     {
-                    lawyersData.map(lawyerData =><Lawyer key={lawyerData.id} lawyerData={lawyerData}></Lawyer>)
+                    dataToShow.map(lawyerData =><Lawyer key={lawyerData.id} lawyerData={lawyerData}></Lawyer>)
                 }
                 </div>
                 </Suspense>
@@ -36,9 +35,15 @@ const Lowyers = ({lawyersData}) => {
             </div> : <div></div>)
             } */}
 
-            <button onClick={()=>setShow(!show)} className=" mt-8 btn bg-[#0EA106] text-white rounded-3xl">{
+            {
+                !show && (
+                    <button onClick={()=>setShow(true)} className=" mt-8 btn bg-[#0EA106] text-white rounded-3xl">View More</button>
+                )
+            }
+
+            {/* <button onClick={()=>setShow(!show)} className=" mt-8 btn bg-[#0EA106] text-white rounded-3xl">{
         show ? 'Show Less' : 'Show All Lawyer'
-        }</button>
+        }</button> */}
 
         </div>
     );
