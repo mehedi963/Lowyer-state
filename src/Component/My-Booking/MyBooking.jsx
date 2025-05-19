@@ -9,7 +9,8 @@ const MyBooking = () => {
     const [myBookList, setMyBooked] = useState();
     
     const handleRemoveBookList = (id) =>{
-        console.log(id);
+        const reaminingList = myBookList.filter(book => book.id !== id);
+        setMyBooked(reaminingList);
      }
 
     useEffect(() =>{
