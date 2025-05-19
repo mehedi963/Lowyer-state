@@ -8,6 +8,10 @@ const MyBooking = () => {
     const data = useLoaderData();
     const [myBookList, setMyBooked] = useState();
     
+    const handleRemoveBookList = (id) =>{
+        console.log(id);
+     }
+
     useEffect(() =>{
         const storeBookedData = getStored();
         console.log(storeBookedData);
@@ -16,7 +20,7 @@ const MyBooking = () => {
         const myBooking = data.filter(booked =>convertedStoredBookData.includes(booked.id));
         setMyBooked(myBooking);
     },[])
-    console.log( myBookList);
+
     return (
         <div>
             
@@ -34,7 +38,7 @@ const MyBooking = () => {
             </div>
 
             {
-                myBookList?.map(book =><Booking key={book.id} book={book}></Booking>)
+                myBookList?.map(book =><Booking key={book.id} book={book} handleRemoveBookList={handleRemoveBookList}></Booking>)
             }
 
         </div>

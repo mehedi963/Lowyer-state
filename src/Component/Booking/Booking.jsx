@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Booking = ({book}) => {
-    console.log(book);
-    const {name, fee, speciality}= book;
+const Booking = ({book, handleRemoveBookList}) => {
+    const {id,name, fee, speciality}= book;
+
     return (
         <div className="card w-full bg-base-100 shadow-sm gap-3 mb-8">
   <div className="card-body">
@@ -16,7 +16,7 @@ const Booking = ({book}) => {
     </div>
 
     <div className="mt-6">
-      <button className="btn btn-dash btn-secondary btn-block">Cancle Appointment</button>
+      <button onClick={()=>handleRemoveBookList(id)} className="btn btn-dash btn-secondary btn-block">Cancle Appointment</button>
     </div>
   </div>
 </div>
