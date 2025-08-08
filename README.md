@@ -7,7 +7,7 @@ An Online web application that allows users to book appointments with lawyers, v
 
 ## 🔗 Live Demo
 
-[🌐 View Live Site](https://roommate-finder-c9163.web.app) <!-- Add your live project link here -->
+[🌐 View Live Site](https://courageous-gumption-c32f1b.netlify.app/) <!-- Add your live project link here -->
 
 ---
 
